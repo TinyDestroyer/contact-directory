@@ -23,10 +23,10 @@ const ContactCard = ({ contact }) => {
     <>
       <div
         key={contact.id}
-        className="flex items-center justify-between bg-amber-200 rounded-lg p-2"
+        className="flex items-center justify-between bg-yellow rounded-lg p-2"
       >
         <div className="flex gap-1">
-          <HiOutlineUserCircle className="text-4xl text-orange-500" />
+          <HiOutlineUserCircle className="text-4xl text-orange" />
           <div className="">
             <h2 className="font-medium">{contact.name}</h2>
             <p className="text-sm">{contact.email}</p>
@@ -36,7 +36,7 @@ const ContactCard = ({ contact }) => {
           <RiEditCircleLine onClick={onOpen} className="cursor-pointer" />
           <IoMdTrash
             onClick={() => deleteContact(contact.id)}
-            className="cursor-pointer text-orange-500"
+            className="cursor-pointer text-orange"
           />
         </div>
       </div>
